@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>PMC Barbershop</title>
   <link rel="icon" href="logo.png" type="image/png" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
   <style>
@@ -141,157 +141,23 @@
       padding: 0 20px; 
     }
   }
-  /* Hover effect for images */
-.hover-effect {
-  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
-}
-
-.hover-effect:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  filter: brightness(1.05);
-}
-
-.contact-section {
-      padding: 40px 40px;
-    }
-    .contact-info i {
-      color: black;
-      font-size: 20px;
-      margin-right: 10px;
-    }
-    .info-item {
-      margin-bottom: 20px;
-      display: flex;
-      align-items: start;
-    }
-    .info-item div {
-      line-height: 1.4;
-    }
-    iframe {
-      width: 90%;
-      height: 300px;
-      border: none;
-      border-radius: 8px;
-    }
-
-    @media (min-width: 768px) {
-      .contact-section .row {
-        align-items: center;
-      }
-      iframe {
-        height: 400px;
-      }
-    }
-    .hero-section {
-  background-image: url('img.jpeg'); 
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  width: 100%;
-  
-}
-
-.hero-section h1, .hero-section h5 {
-  margin-bottom: 0.5rem;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-@media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 1.8rem;
-  }
-  .hero-section h5 {
-    font-size: 1rem;
-  }
-  .btn {
-    font-size: 1rem;
-  }
-}
-.custom-paragraph {
-  letter-spacing: 2px;
-  font-size: 17px;
-  line-height: 1.6;
-  white-space: normal;
-  text-align: start;
-  padding: 0 15px;
-}
-@media (max-width: 767.98px) {
-  .yellow-line {
-    display: none;
-  }
-}
-.section-title {
-  position: relative;
-  display: inline-block;
-  font-family: 'Times New Roman', Times, serif;
-  margin-bottom: 1rem;
-}
-
-.section-title::after {
-  content: "";
-  display: block;
-  margin: 0 auto;
-  margin-top: 8px;
-  width: 80px;
-  height: 4px;
-  background-color: rgb(255, 200, 0);
-  border-radius: 2px;
-}
-
-/* Make it shrink on smaller screens */
-@media (max-width: 768px) {
-  .section-title::after {
-    width: 50px;
-    height: 3px;
-  }
-}
-
-@media (max-width: 576px) {
-  .section-title::after {
-    width: 35px;
-    height: 2px;
-  }
-}
-
-.underline-grow {
-  position: relative;
-  display: inline-block;
-  font-family: 'Times New Roman', Times, serif;
-  cursor: pointer;
-  color: black;
-}
-
-.underline-grow::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 3px;
-  width: 50%; 
-  background-color: rgb(255, 200, 0);
-  transition: width 0.4s ease;
-}
-
-.underline-grow:hover::after {
-  width: 100%; 
-}
 </style>
 </head>
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg shadow-sm">
+<nav class="navbar navbar-expand-lg shadow-sm bg-white">
   <div class="container">
-    
     <a class="navbar-brand d-flex align-items-center" href="#">
-        <span style="color: black; font-weight: bold; font-size: 1.3rem;letter-spacing: 1px;">PMC</span>&nbsp;
-        <i class="fas fa-spa me-2" style="color: rgb(255, 191, 0); font-size: 1.5rem;"></i>
-      </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span style="color: black; font-weight: bold; font-size: 1.3rem; letter-spacing: 1px;">PMC</span>&nbsp;
+      <i class="fas fa-spa me-2" style="color: rgb(255, 191, 0); font-size: 1.5rem;"></i>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars custom-toggler-icon"></i>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item"><a class="nav-link active" style="color:black" href="#">Home</a></li>
@@ -314,44 +180,27 @@
 </div>
 
 <!--About section-->
-<div class="container-fluid our-story-section shadow-sm p-3" id="about"><br>
-  <div class="row">
-    <div class="col-lg-12 our-story-content text-center animate-fade delay-0">
-      <h5 style="color: rgb(255, 200, 0);">Our Story</h5>
-      <h2 class="mb-0 section-title underline-grow" style="font-family: 'Times New Roman', Times, serif;">About PMC Barbershop</h2><br>
-      <br>
-      <p style="letter-spacing: 1px; font-size: 17px;" class="text-muted service-description">
-        At PMC Barbershop, grooming is more than just a haircut. Our expert barbers provide precision cuts and beard styling  tailored to your style. <br>
+<div class="container-fluid text-center p-3 shadow-sm" id="about"><br>
+  <h5 style="color: rgb(255, 200, 0);">Our Story</h5>
+  <h2 class="mb-3 section-title underline-grow" style="font-family: 'Times New Roman', Times, serif;">
+    About PMC Barbershop
+  </h2>
+  <p class="text-muted animate-fade delay-2" style="max-width: 700px; margin: 0 auto; font-size: 17px; letter-spacing: 1px;">
+    Discover the tradition of fine grooming at PMC Barbershop.<br>
+    Where classic skill meets modern style.
+  </p>
+  <br>
+  <div class="row align-items-center">
+    <!-- Image Section -->
+    <div class="col-md-6 mb-4 mb-md-0 d-flex justify-content-center animate-fade delay-0">
+      <img src="img2.png" class="shadow hover-effect custom-img img-fluid" alt="Barber tools">
+    </div>
+
+    <!-- Text Section -->
+    <div class="col-md-6 animate-fade delay-2">
+      <p class="text-muted service-description px-3" style="letter-spacing: 1px; font-size: 17px;">
+        At PMC Barbershop, grooming is more than just a haircut—it's an experience crafted with precision and care. Our expert barbers combine traditional techniques with modern trends to provide a look that matches your personality and lifestyle. Whether you're getting a classic cut or a fresh beard trim, we ensure every detail is handled with professionalism and finesse. Our goal is to deliver exceptional service in a relaxed, welcoming environment where style and comfort come together. Join us and discover grooming that goes beyond the ordinary—crafted just for you.
       </p>
-    </div>
-  </div>
-
-  <div class="row justify-content-center align-items-center">
-    <!-- Image -->
-    <div class="col-12 col-lg-6 d-flex justify-content-center p-4 animate-fade delay-1">
-      <img src="img2.png" class="shadow hover-effect custom-img" alt="Barber tools">
-    </div>
-
-    <!-- Text and Card -->
-    <div class="col-12 col-lg-6 d-flex flex-column align-items-center p-2 animate-fade delay-2">
-      <div class="d-flex flex-column align-items-start gap-4 w-100 px-3">
-        <div class="d-flex">
-          <div class="yellow-line me-2 d-none d-md-block"></div>
-          <p class="text-muted m-0 custom-paragraph">
-            Our barbers blend classic craftsmanship with modern style,<br>
-            ensuring you look and feel your best. Experience precision cuts<br>
-            that define your style. 
-          </p>
-        </div>
-
-        <div class="card shadow-sm w-100 hover-effect animate-fade delay-3 bg-dark" style="max-width: 400px;">
-          <div class="card-body">
-            <p class="card-text text-white" style="letter-spacing: 2px; font-size: 17px;">
-              More than just a barbershop — PMC is a community. Sit back, relax, and enjoy the vibe. Let’s redefine grooming together with quality, comfort, and personality.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
@@ -522,7 +371,6 @@
   </div>
 </footer>
 
-
 <script>
     document.getElementById("autoScrollTrigger").addEventListener("click", function () {
       const scrollInterval = setInterval(() => {
@@ -538,6 +386,10 @@
   </script>
   </body>
 </html>  
+
+
+
+
 
 
 
